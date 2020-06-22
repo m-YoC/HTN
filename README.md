@@ -5,7 +5,7 @@
 
  The library is MIT Lisence but Lisences of Eigen and ViennaCL library take over each one.  
 
- This library's calculation is based on maltivariate Taylor expansion version of dual number.
+ HTN's calculation is based on maltivariate Taylor expansion version of dual number.
 
  ## Usage
 
