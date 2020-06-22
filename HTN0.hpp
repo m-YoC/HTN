@@ -32,21 +32,21 @@ namespace HTN {
 	class htn_r0 : htn_tag {
 	public:
 		using this_type_s = htn_r0<s_type, dim>;
-		using inner_type_s = viennacl::scalar<s_type>;
+		using inner_type_s = s_type;
 		friend class htn_r0<s_type, dim>;
 
 		template<unsigned int id = 0>
 		static this_type_s x(s_type scalar) {
-			return this_type_s(inner_type_s(scalar));
+			return this_type_s(scalar);
 		}
 
 		static this_type_s x(s_type scalar, unsigned int id = 0) {
-			return this_type_s(inner_type_s(scalar));
+			return this_type_s(scalar);
 		}
 
 		htn_r0() = default;
 		htn_r0(s_type init) : x0(init) {}
-		htn_r0(const inner_type_s& init) : x0(init) {}
+		//htn_r0(const inner_type_s& init) : x0(init) {}
 
 		//operator type() {
 		//	return (type)x0;
@@ -127,11 +127,11 @@ namespace HTN {
 		}
 
 		this_type_s pow(const this_type_s& index) const {
-			return create_this_type_s(pow0r((s_type)index));
+			return create_this_type_s(pow0r(index.x0));
 		}
 
 		this_type_s sqrt() const {
-			return (*this).pow(static_cast<s_type>(0.5));
+			return this->pow(static_cast<s_type>(0.5));
 		}
 
 		this_type_s exp() const {
@@ -167,27 +167,27 @@ namespace HTN {
 		}
 
 		this_type_s sinh() const {
-			return this_type_s(std::sinh((s_type)x0));
+			return this_type_s(std::sinh(x0));
 		}
 
 		this_type_s cosh() const {
-			return this_type_s(std::cosh((s_type)x0));
+			return this_type_s(std::cosh(x0));
 		}
 
 		this_type_s tanh() const {
-			return this_type_s(std::tanh((s_type)x0));
+			return this_type_s(std::tanh(x0));
 		}
 
 		this_type_s asinh() const {
-			return this_type_s(std::asinh((s_type)x0));
+			return this_type_s(std::asinh(x0));
 		}
 
 		this_type_s acosh() const {
-			return this_type_s(std::acosh((s_type)x0));
+			return this_type_s(std::acosh(x0));
 		}
 
 		this_type_s atanh() const {
-			return this_type_s(std::atanh((s_type)x0));
+			return this_type_s(std::atanh(x0));
 		}
 
 
@@ -200,7 +200,7 @@ namespace HTN {
 		}
 
 		s_type X0_to_type() const {
-			return (s_type)x0;
+			return x0;
 		}
 
 		constexpr static unsigned int get_dim() {
@@ -258,7 +258,7 @@ namespace HTN {
 		}
 
 		inner_type_s exp0r() const {
-			return std::exp((s_type)x0);
+			return std::exp(x0);
 		}
 
 		inner_type_s log0r() const {
