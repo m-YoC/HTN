@@ -7,7 +7,7 @@
 
  HTN's calculation is based on maltivariate Taylor expansion version of dual number.
 
- ## Usage
+ ## Usage Code
 
 ```cpp:main
 //#define VIENNACL_WITH_OPENMP
