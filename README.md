@@ -1,11 +1,13 @@
 # HTN: Hyper Triple Numbers Library
+ 
+ (! Broken English)
  Automatic forward-mode differential library.  
  We can calculate gradient vector and hessian matrix automatically.  
  This library uses [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) and [ViennaCL](http://viennacl.sourceforge.net/doc/index.html) library.
 
  The library is MIT Lisence but Lisences of Eigen and ViennaCL library take over each one.  
 
- HTN's calculation is based on maltivariate Taylor expansion version of dual number.
+ HTN's calculation is based on maltivariate Taylor expansion version of dual numbers.
 
  ## Example Code
 
