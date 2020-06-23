@@ -1,6 +1,7 @@
 # HTN: Hyper Triple Numbers Library
  
- (! Broken English)
+ (! Broken English)  
+ 
  Automatic forward-mode differential library.  
  We can calculate gradient vector and hessian matrix automatically.  
  This library uses [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) and [ViennaCL](http://viennacl.sourceforge.net/doc/index.html) library.
