@@ -107,7 +107,7 @@ All HTN values are as follows;
 
 and dual units;
 
-<img src="https://latex.codecogs.com/gif.latex?\epsilon_i&space;\neq&space;0,&space;~i&space;\neq&space;j&space;\rightarrow&space;\epsilon_i&space;\neq&space;\epsilon_j,&space;~\epsilon_i&space;\epsilon_j&space;=&space;\epsilon_j&space;\epsilon_i,&space;~\epsilon_i&space;\epsilon_j&space;\epsilon_k&space;=&space;0" title="\epsilon_i \neq 0, ~i \neq j \rightarrow \epsilon_i \neq \epsilon_j, ~\epsilon_i \epsilon_j = \epsilon_j \epsilon_i, ~\epsilon_i \epsilon_j \epsilon_k = 0" />
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;\epsilon_i&space;\neq&space;0,&space;~i&space;\neq&space;j&space;\rightarrow&space;\epsilon_i&space;\neq&space;\epsilon_j,&space;~\epsilon_i&space;\epsilon_j&space;=&space;\epsilon_j&space;\epsilon_i,&space;~\epsilon_i&space;\epsilon_j&space;\epsilon_k&space;=&space;0" title="\epsilon_i \neq 0, ~i \neq j \rightarrow \epsilon_i \neq \epsilon_j, ~\epsilon_i \epsilon_j = \epsilon_j \epsilon_i, ~\epsilon_i \epsilon_j \epsilon_k = 0" />
 .
 
 If HTN value is a i-th base variable, 
@@ -121,7 +121,7 @@ All functions are based on
 
 <img src="https://latex.codecogs.com/gif.latex?f(\mathbf{\chi}=(\chi_1,~\chi_2,~...))&space;=&space;f&space;&plus;&space;\mathbf{\epsilon}^{\rm&space;T}&space;\sum_{i}&space;{\bf&space;x}_i&space;f_{x_i}&space;&plus;&space;\frac{1}{2}&space;\mathbf{\epsilon}^{\rm&space;T}&space;\left(&space;\sum_i&space;X_i&space;f_{x_i}&space;&plus;&space;\sum_i&space;\sum_j&space;{\bf&space;x}_i&space;{\bf&space;x}_j^{\rm&space;T}&space;f_{x_i&space;x_j}&space;\right)&space;\mathbf{\epsilon}" title="f(\mathbf{\chi}=(\chi_1,~\chi_2,~...)) = f + \mathbf{\epsilon}^{\rm T} \sum_{i} {\bf x}_i f_{x_i} + \frac{1}{2} \mathbf{\epsilon}^{\rm T} \left( \sum_i X_i f_{x_i} + \sum_i \sum_j {\bf x}_i {\bf x}_j^{\rm T} f_{x_i x_j} \right) \mathbf{\epsilon}" />  
 
-where, <img src="https://latex.codecogs.com/gif.latex?\inline&space;f&space;=&space;f(x_1,&space;\cdots,&space;x_D)" title="f = f(x_1, \cdots, x_D)" />.
+, where <img src="https://latex.codecogs.com/gif.latex?\inline&space;f&space;=&space;f(x_1,&space;\cdots,&space;x_D)" title="f = f(x_1, \cdots, x_D)" />.
 
 In particular,  
 
